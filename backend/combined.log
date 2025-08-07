@@ -95,3 +95,19 @@
 {"level":"info","message":"MongoDB Atlas connection successful","timestamp":"2025-08-07T10:31:14.414Z"}
 {"level":"info","message":"Connected to MongoDB Atlas","timestamp":"2025-08-07T10:31:14.421Z"}
 {"level":"info","message":"Server running on port 3000","timestamp":"2025-08-07T10:31:14.445Z"}
+{"level":"info","message":"MongoDB Atlas connection successful","timestamp":"2025-08-07T10:42:48.851Z"}
+{"level":"info","message":"Connected to MongoDB Atlas","timestamp":"2025-08-07T10:42:48.864Z"}
+{"level":"info","message":"Server running on port 4000","timestamp":"2025-08-07T10:42:48.884Z"}
+{"level":"info","message":"MongoDB Atlas connection successful","timestamp":"2025-08-07T10:45:01.034Z"}
+{"level":"info","message":"Connected to MongoDB Atlas","timestamp":"2025-08-07T10:45:01.037Z"}
+{"level":"info","message":"Server running on port 4000","timestamp":"2025-08-07T10:45:01.040Z"}
+{"level":"info","message":"MongoDB Atlas connection successful","timestamp":"2025-08-07T10:47:48.565Z"}
+{"level":"info","message":"Connected to MongoDB Atlas","timestamp":"2025-08-07T10:47:48.570Z"}
+{"level":"info","message":"Server running on port 4000","timestamp":"2025-08-07T10:47:48.582Z"}
+{"level":"info","message":"MongoDB Atlas connection successful","timestamp":"2025-08-07T10:48:28.493Z"}
+{"level":"info","message":"Connected to MongoDB Atlas","timestamp":"2025-08-07T10:48:28.505Z"}
+{"level":"info","message":"Server running on port 4000","timestamp":"2025-08-07T10:48:28.518Z"}
+{"level":"info","message":"MongoDB Atlas connection successful","timestamp":"2025-08-07T10:50:26.826Z"}
+{"level":"info","message":"Connected to MongoDB Atlas","timestamp":"2025-08-07T10:50:26.833Z"}
+{"level":"info","message":"Server running on port 4000","timestamp":"2025-08-07T10:50:26.848Z"}
+{"level":"error","message":"CastError: Cast to ObjectId failed for value \"{{delhi_plan_id}}\" (type string) at path \"_id\" for model \"Plan\"\n    at SchemaObjectId.cast (D:\\shipmnt_assessment\\backend\\node_modules\\mongoose\\lib\\schema\\objectId.js:251:11)\n    at SchemaType.applySetters (D:\\shipmnt_assessment\\backend\\node_modules\\mongoose\\lib\\schemaType.js:1258:12)\n    at SchemaType.castForQuery (D:\\shipmnt_assessment\\backend\\node_modules\\mongoose\\lib\\schemaType.js:1680:17)\n    at cast (D:\\shipmnt_assessment\\backend\\node_modules\\mongoose\\lib\\cast.js:390:32)\n    at Query.cast (D:\\shipmnt_assessment\\backend\\node_modules\\mongoose\\lib\\query.js:5055:12)\n    at Query._castConditions (D:\\shipmnt_assessment\\backend\\node_modules\\mongoose\\lib\\query.js:2351:10)\n    at model.Query._findOne (D:\\shipmnt_assessment\\backend\\node_modules\\mongoose\\lib\\query.js:2674:8)\n    at model.Query.exec (D:\\shipmnt_assessment\\backend\\node_modules\\mongoose\\lib\\query.js:4604:80)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async getPlan (D:\\shipmnt_assessment\\backend\\controllers\\storeController.js:37:18)","timestamp":"2025-08-07T10:53:32.617Z"}

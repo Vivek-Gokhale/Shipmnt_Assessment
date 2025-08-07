@@ -17,7 +17,7 @@ const express = require('express');
 const router = express.Router();
 const storeRoutes = require("../routes/storeRoute");
 
-router.use('/shop', storeRoutes)
+router.use('/', storeRoutes)
 module.exports = router;
 
 

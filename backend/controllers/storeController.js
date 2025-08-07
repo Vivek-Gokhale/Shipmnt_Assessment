@@ -8,7 +8,8 @@ const Plan = require("../models/PricePlanSchema")
 const addStore = async(req, res, next) =>{
     const {store_location, currency, tax_percentage, premium_items} = req.body;
 
-    const store = await Store.find({"store_location": store_location});
+    const store = await Store.findOne({"store_location": store_location});
+    console.log(store);
     if(store)
         return res.status(400).json({message : "Store with this location already exists"});
 
