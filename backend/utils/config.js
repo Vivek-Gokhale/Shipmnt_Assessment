@@ -13,6 +13,7 @@ module.exports = {
     geminiApi: process.env.GEMINI_API || 'AIzaSyDpVKOigycfsHmsfkuCFAP8vJ9g7uY-bi8',
     backendurl: process.env.BACKEND_URL || `http://localhost:3000`,
     mode: process.env.NODE_ENV || 'development',
-    jwtSecret: process.env.JWT_KEY || `9b8d3cfd1c4e8a32a3a9f4b5c6d7e8f9a1b2c3d4e5f6g7h8i9j0k1l2m3n4o5p6
+    jwtSecret: process.env.JWT_KEY || `9b8d3cfd1c4e8a32a3a9f4b5c6d7e8f9a1b2c3d4e5f6g7h8i9j0k1l2m3n4o5p6, 
 `,
+    mongoURI:process.env.MONGO_URI || 'mongodb://localhost:27017/shipmnt'
 };

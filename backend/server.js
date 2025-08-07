@@ -1,21 +1,20 @@
 const express = require('express');
 const cors = require('cors');
-const app = express();
-const db = require('./utils/db');
+const path = require('path');
+const connectDB = require('./utils/db');
 const routes = require('./routes');
 const errorHandler = require('./utils/errorHandler');
 const logger = require('./utils/logger');
-const path = require('path');
+
+const app = express();
 
 // Middleware
-// current edit
-
 app.use(cors());
 app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
 
-// Serve static files for profile and expense images
-app.use('/get-image', express.static(path.join(__dirname, 'images')));
-
+// Serve static files for audio and images
+// app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
 // Routes
 app.use('/', routes);
 
@@ -23,16 +22,16 @@ app.use('/', routes);
 app.use(errorHandler);
 
 // Database connection
-db.connect()
+connectDB()
   .then(() => {
-    logger.info('Connected to MySQL database');
-    const PORT = process.env.PORT || 5000;
+    logger.info('Connected to MongoDB Atlas');
+    const PORT = process.env.PORT || 3000;
     app.listen(PORT, () => {
       logger.info(`Server running on port ${PORT}`);
     });
   })
   .catch((error) => {
-    logger.error('Failed to connect to database', error);
+    logger.error('Failed to connect to MongoDB Atlas', error);
   });
 
 module.exports = app;
